@@ -1,0 +1,19 @@
+{
+  "name": "web-audio-test",
+  "version": "1.0.0",
+  "description": "testing out web audio",
+  "main": "main.js",
+  "scripts": {
+    "test": "are we going?"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Terricka/Web-Audio-Test.git"
+  },
+  "author": "Terricka Johnson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Terricka/Web-Audio-Test/issues"
+  },
+  "homepage": "https://github.com/Terricka/Web-Audio-Test#readme"
+}
