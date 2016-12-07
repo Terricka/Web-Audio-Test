@@ -60,6 +60,7 @@ function success (midi) {
     for (var input = inputs.next(); input && !input.done; input = inputs.next()) {
         // each time there is a midi message call the onMIDIMessage function
         input.value.onmidimessage = onMIDIMessage;
+        console.log(input.value.onmidimessage[1])
     }
 }
  

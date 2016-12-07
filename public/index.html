@@ -7,10 +7,20 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/addons/p5.dom.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/addons/p5.sound.min.js">
 		</script>
+		
 
 	</head>
 
 	<body>
+
+	<script>
+			var socket = io.connect('../');
+				//Now we can listen for that event
+			socket.on('onconnected', function( data ) {
+					//Note that the data is the object we sent from the server, as is. So we can assume its id exists. 
+		  		console.log( 'Connected successfully to the socket.io server. My server side ID is ' + data.id );
+		  	});
+	</script>
 
 		<div><input type="number" name="bpm" value="60" size="3" /> bpm</div>
 		<div class="start btn">Start</div>
